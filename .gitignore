@@ -1,0 +1,19 @@
+# Node/Next.js (frontend)
+frontend/node_modules/
+frontend/.next/
+frontend/.env*
+
+# Python (backend)
+backend/.venv/
+backend/__pycache__/
+backend/*.pyc
+
+# Reports/data (keep locally only for PoC)
+backend/data/*.json
+
+# OS/editor
+.DS_Store
+Thumbs.db
+
+# Root-level env
+.env
