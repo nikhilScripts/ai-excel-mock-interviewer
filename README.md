@@ -65,7 +65,8 @@ Docker Compose (backend)
 
 Deploy
 - Frontend to Vercel: set project root to frontend/, set NEXT_PUBLIC_API_BASE to your backend URL
-- Backend to any PaaS/VPS: run uvicorn or the provided Docker image, ensure CORS allows your frontend origin
+- Backend to any Render: run uvicorn or the provided Docker image, ensure CORS allows your frontend origin
+- link - https://ai-excel-mock-interviewer-one.vercel.app/
 
 Troubleshooting
 - "Failed to fetch" in UI → check backend /health, confirm NEXT_PUBLIC_API_BASE and restart npm run dev
