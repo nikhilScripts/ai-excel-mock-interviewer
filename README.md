@@ -21,6 +21,27 @@ Environment variables
   - OPENAI_API_KEY=sk-... (optional; if omitted, uses offline grading fallback)
 - Frontend: create frontend/.env.local
   - NEXT_PUBLIC_API_BASE=http://127.0.0.1:8000
+ai-excel-mock-interviewer/
+│── frontend/            # Next.js app
+│   ├── pages/
+│   │   ├── index.js      # Landing page
+│   │   ├── interview.js  # Chat + Excel grid UI
+│   │   ├── report.js     # Final report page
+│   ├── components/
+│   │   ├── ChatWindow.js
+│   │   ├── ExcelGrid.js
+│   │   ├── ReportCard.js
+│   └── styles/           # Tailwind CSS
+│
+│── backend/             # FastAPI app
+│   ├── main.py          # API routes (/start, /answer, /grid, /report)
+│   ├── ai_utils.py      # OpenAI GPT calls
+│   ├── evaluator.py     # Formula/grid evaluation logic
+│   └── Dockerfile       # Containerize backend
+│
+│── .env.example         # Example environment variables
+└── README.md
+
 
 Run locally
 1) Backend
